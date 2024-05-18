@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floroxy</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floroxy</title>
+
+    <link rel="stylesheet" href="assets/scss/Shop.css"> <!--linking css file-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--linking fontawesome-->
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+
+    <div id="navbar-area">
+        <div class="shop-now-nav">
+
+            <img id="company-logo" src="assets/logo.png">
+            <a id="company-name" href="/">
+                <h3>Floroxy</h3>
+            </a>
+
+            <a id="company-name" href="">
+                <h3>Products</h3>
+            </a>
+
+            <div class="notif-area">
+                <h3><i class="fa-solid fa-bell" style="color: aliceblue;"></i></h3>
+            </div>
+
+            <div class="profile-area">
+                <i class="profile-icon fa-regular fa-circle-user" style="color: aliceblue; font-size: 35px;"></i>
+
+                <div class="profile-dropdown">
+                    <a href="">Profile</a>
+                    <a href="">Orders</a>
+                    <a href="">Help</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="header-area">
+        <h1>Explore our garden and bring the<br><b>serenity of plants</b><br>into your life!</h1>
+        <img id="header-bg-img" src="assets/shop/shop-header-bg.png">
+        <img id="offer-badge" src="assets/shop/offer_badge.png">
+        <div id="header-offer">
+            <h2>-20%</h2>
+            <p>for purchase over<br>1000/-</p>
+            <h3>Y A Y 2 0</h3>
+        </div>
+    </div>
+
+    <div id="category-heading">
+        <br/>
+        <br/>
+        <br/>
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Add New Product</h2>
+                    <form id="product-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="productCatagory" placeholder="Category" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="productSubCatagory" placeholder="Sub Category" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="productName" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="productBrand" placeholder="Brand" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="productDetails" placeholder="Details" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="productQuantity" placeholder="Quantity" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" step="0.01" class="form-control" id="productPrice" placeholder="Price" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="productDiscount" placeholder="Discount" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Product</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Update Product</h2>
+                    <form id="update-product-form">
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="updateProductId" placeholder="Product ID" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="updateProductCatagory" placeholder="Category" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="updateProductSubCatagory" placeholder="Sub Category" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="updateProductName" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="updateProductBrand" placeholder="Brand" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="updateProductDetails" placeholder="Details" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="updateProductQuantity" placeholder="Quantity" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" step="0.01" class="form-control" id="updateProductPrice" placeholder="Price" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="updateProductDiscount" placeholder="Discount" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Update Product</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Delete Product</h2>
+                    <form id="delete-product-form">
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="deleteProductId" placeholder="Product ID" required>
+                        </div>
+                        <button type="submit" class="btn btn-danger">Delete Product</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+            document.getElementById("product-form").addEventListener("submit", function(event) {
+                event.preventDefault();
+                addProduct();
+            });
+
+            document.getElementById("update-product-form").addEventListener("submit", function(event) {
+                event.preventDefault();
+                updateProduct();
+            });
+
+            document.getElementById("delete-product-form").addEventListener("submit", function(event) {
+                event.preventDefault();
+                deleteProduct();
+            });
+        });
+
+        function addProduct() {
+            const product = {
+                catagory: document.getElementById("productCatagory").value,
+                subcatagory: document.getElementById("productSubCatagory").value,
+                name: document.getElementById("productName").value,
+                brand: document.getElementById("productBrand").value,
+                details: document.getElementById("productDetails").value,
+                quantity: document.getElementById("productQuantity").value,
+                price: document.getElementById("productPrice").value,
+                discount: document.getElementById("productDiscount").value
+            };
+
+            fetch('/insertProduct', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(product)
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert('Product added successfully');
+                fetchProducts();
+                document.getElementById("product-form").reset();
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+        function updateProduct() {
+            const product = {
+                productId: document.getElementById("updateProductId").value,
+                catagory: document.getElementById("updateProductCatagory").value,
+                subcatagory: document.getElementById("updateProductSubCatagory").value,
+                name: document.getElementById("updateProductName").value,
+                brand: document.getElementById("updateProductBrand").value,
+                details: document.getElementById("updateProductDetails").value,
+                quantity: document.getElementById("updateProductQuantity").value,
+                price: document.getElementById("updateProductPrice").value,
+                discount: document.getElementById("updateProductDiscount").value
+            };
+
+            fetch('/updateProduct', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(product)
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert('Product updated successfully');
+                fetchProducts();
+                document.getElementById("update-product-form").reset();
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+        function deleteProduct() {
+            const productId = document.getElementById("deleteProductId").value;
+
+            fetch(`/deleteProduct/${productId}`, {
+                method: 'DELETE'
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert('Product deleted successfully');
+                fetchProducts();
+                document.getElementById("delete-product-form").reset();
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floroxy</title>
+
+    <link rel="stylesheet" href="assets/scss/Shop.css"> <!--linking css file-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--linking fontawesome-->
+
+</head>
+
+
+<body>
+
+    <div id="navbar-area">
+        <div class="shop-now-nav">
+
+            <img id="company-logo" src="assets/logo.png">
+            <a id="company-name" href="/">
+                <h3>Floroxy</h3>
+            </a>
+
+            <a id="company-name" href="/product">
+                <h3>Products</h3>
+            </a>
+
+            <div class="notif-area">
+                <h3><i class="fa-solid fa-bell" style="color: aliceblue;"></i></h3>
+            </div>
+
+            <div class="profile-area">
+                <i class="profile-icon fa-regular fa-circle-user" style="color: aliceblue; font-size: 35px;"></i>
+
+                <div class="profile-dropdown">
+                    <a href="">Profile</a>
+                    <a href="">Orders</a>
+                    <a href="">Help</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="header-area">
+
+        <h1>Explore our garden and bring the<br><b>serenity of plants</b><br>into your life!</h1>
+        <img id="header-bg-img" src="assets/shop/shop-header-bg.png">
+        <img id="offer-badge" src="assets/shop/offer_badge.png">
+        <div id="header-offer">
+            <h2>-20%</h2>
+            <p>for purchase over<br>1000/-</p>
+            <h3>Y A Y 2 0</h3>
+        </div>
+        <div class="jump-to">
+            <a href="#featured-area">Explore More</a>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+
+
+    </div>
+
+    <div id="category-area">
+
+        <div id="category-heading">
+            <p>categories</p>
+        </div>
+
+        <div id="category-box">
+        </div>
+
+        <div id="fert-box" class="category-box-secondary">
+            <img src="assets/shop/category-fert.png" alt="fert.png">
+            <h2>Essential Fertilizers</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, fugit!</p>
+            <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+
+        <div id="equip-box" class="category-box-secondary">
+            <img src="assets/shop/category-equip.png" alt="equip.png">
+            <h2>Gardening Tools</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, fugit!</p>
+            <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let myVar = setInterval(fetchProducts, 1000);
+        });
+
+        function fetchProducts() {
+            fetch('/getProduct')
+                .then(response => response.json())
+                .then(products => {
+                    const productTiles = document.getElementById("category-box");
+                    productTiles.innerHTML = '';
+                    products.forEach(product => {
+                        const productTile = document.createElement("div");
+                        productTile.className = "plant-category";
+                        productTile.innerHTML = `
+                            <a href=""><img src="assets/shop/plant-categories/${product.productDetails}">
+                                <p><br>${product.productName}<br>$ ${product.productPrice}</p>
+                            </a>
+                        `;
+                        productTiles.appendChild(productTile);
+                    });
+                });
+        }
+    </script>
+
+</body>
+
+</html>

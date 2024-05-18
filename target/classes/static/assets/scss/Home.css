@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.664), rgb(0, 0, 0)), url("../assets/home/bg-image-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.btn {
+    color: aliceblue;
+    background-color: #274b55;
+}
+
+.btn:hover {
+    color: #05FF81;
+    background-color: rgb(41, 44, 46);
+    border-color: #05FF81;
+}
+
+
+/* navbar start  */
+
+.navbar {
+    background-color: #fcfcfc;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-link {
+    color: rgb(72, 78, 83);
+}
+
+.navbar-link:hover {
+    color: #00723b;
+    text-decoration: none;
+}
+
+.navbar-item {
+    margin: 0px 8px 0px 8px;
+}
+
+.navbar-brand {
+    color: rgb(36, 32, 32);
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #00723b;
+}
+
+.navbar-nav {
+    margin: 0px auto 50px;
+}
+
+#user-dropdown-in-nav {
+    left: -8px;
+    min-width: 5rem;
+}
+
+#user-buttons-in-nav {
+    border: none;
+    background-color: transparent;
+}
+
+/* navbar end */
+
+/* Get Started Start */
+
+#get-started {
+
+    display: flex;
+    padding: 100px 50px;
+    flex-wrap: wrap;
+    width: 100%;
+    /* column-gap: 50px; */
+    row-gap: 50px;
+    justify-content: space-evenly;
+
+
+}
+
+#carouselExampleIndicators {
+    width: 7.85in;
+
+}
+
+.intro {
+    width: 3in;
+    /* justify-self: center; */
+}
+
+/* Get Started End */
+
+/* Features Start */
+
+#features {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #d7d7d7;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.features-icon {
+    font-size: 70px;
+    padding: 30px;
+    color: #00723b;
+}
+
+/* Features End */
+
+/* Highlights start */
+
+#highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: rgba(24, 62, 39, 0.8);
+    padding-top: 50px; padding-bottom: 50px;
+}
+
+.product {
+    margin: 50px;
+    width: min-content;
+    font-size: 70%;
+}
+
+/* Highlights end */
+
+/* FAQ Start */
+
+#faq {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.875);
+    align-content: center;
+    justify-content: space-evenly;
+    padding-top: 50px; padding-bottom: 50px;
+
+
+
+}
+
+.faq-item {
+
+    width: 600px;
+
+    padding: 50px;
+
+
+}
+
+/* FAQ Start */
+
+
+/* contact start */
+
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1f2e25;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.contact-item {
+    text-align: center;
+    padding: 30px;
+}
+
+.contact-icon {
+    font-size: 30px;
+    padding: 30px;
+    color: #efefef;
+}
+
+
+/* contact end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* old */
+/* #features {
+    background-color: #eeeeee;
+    height: max-content;
+    padding: 50px 20px;
+}
+
+.features-icon {
+    font-size: 100px;
+    color: #00723b;
+    margin: 50px;
+}
+
+.feature-item {
+    text-align: center;
+}
+
+#highlights {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.highlights-item {
+    width: 100%;
+}
+
+#contact {
+    background-color: #292929;
+    height: max-content;
+    padding: 50px 20px;
+}
+
+.contact-icon {
+    font-size: 40px;
+    color: #fcfcfc;
+    margin: 20px;
+}
+ */
